@@ -5,15 +5,18 @@
     - F1D022049
 
 ## Deskripsi Tugas
-    Tugas ini bertujuan untuk mengimplementasikan sebuah API (Application Programming Interface) server menggunakan platform Node.js dengan framework Express.js. Fokus utama dari implementasi ini adalah untuk mendemonstrasikan pemahaman mengenai konsep routing dan modularisasi kode. Aplikasi yang dibangun memiliki beberapa endpoint yang melayani fungsi berbeda, mulai dari menampilkan data statis hingga memberikan data dinamis berdasarkan parameter.
+
+Tugas ini bertujuan untuk mengimplementasikan sebuah API (Application Programming Interface) server menggunakan platform Node.js dengan framework Express.js. Fokus utama dari implementasi ini adalah untuk mendemonstrasikan pemahaman mengenai konsep routing dan modularisasi kode. Aplikasi yang dibangun memiliki beberapa endpoint yang melayani fungsi berbeda, mulai dari menampilkan data statis hingga memberikan data dinamis berdasarkan parameter.
 
 ## Hasil
 * **GET http://localhost:3000/**
     ![alt text](./output/image.png)
+
     Menguji endpoint root yang dirancang untuk mengembalikan data statis berupa NIM dan Nama.
 
 * **GET http://localhost:3000/hitung**
     ![alt text](./output/image1.png)
+
     Menguji endpoint yang berfungsi untuk mengeksekusi beberapa fungsi matematika yang diimpor dari modul utils/math.js. Hasil ini valid, membuktikan bahwa file index.js berhasil mengimpor dan mengeksekusi fungsi tambah, kali, kurang, dan pangkat dengan benar.
 
 * **GET http://localhost:3000/profile**
@@ -22,4 +25,5 @@
 
 * **GET http://localhost:3000/profile/F1D022049**
     ![alt text](./output/image3.png)
+
     Menguji endpoint dinamis yang dirancang untuk mengambil dan menampilkan satu data profil spesifik berdasarkan parameter nim yang diberikan pada URL. Ketika diakses dengan NIM F1D022049, server memberikan respons JSON yang berisi satu objek profil yang sesuai dengan NIM tersebut.
